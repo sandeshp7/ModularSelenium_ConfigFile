@@ -13,7 +13,7 @@ public class CommonComponents {
 	
 	//To verify by text of the link
 	public Boolean verifyByLinkText(String linkText) {
-		return this.driver.findElement(By.linkText(linkText)).isDisplayed();
+		return this.driver.findElements(By.linkText(linkText)).size()>0;
 	}
 		
 	//wait for a specified amount of time
